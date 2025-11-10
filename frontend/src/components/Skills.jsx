@@ -29,8 +29,7 @@ const Skills = () => {
       title: 'Frontend',
       skills: [
         { name: 'React', icon: FaReact, color: 'text-cyan-400' },
-        { name: 'Next.js', icon: SiNextdotjs, color: 'text-white' },
-        { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-400' },
+        
         { name: 'JavaScript', icon: SiJavascript, color: 'text-yellow-400' },
         { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-cyan-400' },
       ],
@@ -43,7 +42,7 @@ const Skills = () => {
         { name: 'Python', icon: FaPython, color: 'text-blue-400' },
         { name: 'MongoDB', icon: SiMongodb, color: 'text-green-500' },
         { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-blue-400' },
-        { name: 'Redis', icon: SiRedis, color: 'text-red-500' },
+        
       ],
     },
     {
