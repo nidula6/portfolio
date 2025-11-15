@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import { HiLocationMarker } from 'react-icons/hi';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const ref = useRef(null);
@@ -13,13 +14,25 @@ const Contact = () => {
     message: '',
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your form submission logic here (e.g., EmailJS, API call)
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-  };
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  emailjs.send(
+    'service_psp8p6l',
+    'template_cu32pv6',
+    formData,
+    'br2EQFEpdnTAdlkSe'
+  )
+  .then((result) => {
+      console.log('Email sent!', result.text);
+      alert('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' });
+  })
+  .catch((error) => {
+      console.error('Email error:', error);
+      alert('Failed to send message. Please try again.');
+  });
+};
 
   const handleChange = (e) => {
     setFormData({
@@ -67,7 +80,7 @@ const Contact = () => {
                       href="mailto:your.email@example.com"
                       className="text-gray-400 hover:text-green-400 transition-colors duration-200 font-mono text-sm"
                     >
-                      your.email@example.com
+                      nidulajayawardana@gmail.com
                     </a>
                   </div>
                 </div>
@@ -78,7 +91,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-medium mb-1 font-mono">Location</h4>
-                    <p className="text-gray-400 font-mono text-sm">City, Country</p>
+                    <p className="text-gray-400 font-mono text-sm">Gampaha, Sri lanka</p>
                   </div>
                 </div>
               </div>
@@ -87,7 +100,7 @@ const Contact = () => {
                 <h4 className="text-white font-medium mb-4 font-mono">Connect with me</h4>
                 <div className="flex space-x-4">
                   <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/nidula6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-green-400 hover:bg-slate-700 transition-all duration-200"
@@ -95,21 +108,15 @@ const Contact = () => {
                     <FaGithub size={24} />
                   </a>
                   <a
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://linkedin.com/in/nidula-jayawardhana-4861a824b"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-green-400 hover:bg-slate-700 transition-all duration-200"
                   >
                     <FaLinkedin size={24} />
                   </a>
-                  <a
-                    href="https://twitter.com/yourusername"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-green-400 hover:bg-slate-700 transition-all duration-200"
-                  >
-                    <FaTwitter size={24} />
-                  </a>
+                  
+                    
                 </div>
               </div>
             </motion.div>

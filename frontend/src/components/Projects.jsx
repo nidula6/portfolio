@@ -12,64 +12,44 @@ const Projects = () => {
   // ========================================
   const projects = [
     {
-      title: 'E-Commerce Platform',
+      title: 'tech_Pulse – University News Mobile App',
       description:
-        'A full-featured e-commerce platform with product management, shopping cart, payment integration, and order tracking. Built with modern technologies for optimal performance.',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&auto=format&fit=crop',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: 'https://github.com/yourusername/ecommerce',
-      demo: 'https://yourproject.com',
+        'Developed a mobile application that delivers real-time university news and updates to students and staff. Integrated Firebase Realtime Database for instant content.',
+      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop',
+      tags: ['Java', 'Android Studio', 'Firebase'],
+      github: 'https://github.com/nidula6/Tech_Pulse.git',
+      demo: '#',
       featured: true,
     },
     {
-      title: 'Task Management App',
+      title: 'Learning Management System',
       description:
-        'A collaborative task management application with real-time updates, team workspaces, and project tracking. Features drag-and-drop interface and notification system.',
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop',
-      tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
-      github: 'https://github.com/yourusername/taskapp',
-      demo: 'https://yourproject.com',
+        'Developed a MERN-based web system for managing classes, attendance, performance, and communication with role-based access and data visualization.',
+      image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&auto=format&fit=crop',
+      tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Material UI', 'Redux', 'Tailwind CSS'],
+      github: 'https://github.com/nidula6/LMS-New.git',
+      demo: '#',
       featured: true,
     },
     {
-      title: 'AI Chat Application',
+      title: 'Library_System – Library Management Web App',
       description:
-        'An intelligent chatbot application powered by AI with natural language processing, context awareness, and multi-language support.',
-      image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&auto=format&fit=crop',
-      tags: ['Python', 'React', 'OpenAI', 'Redis'],
-      github: 'https://github.com/yourusername/aichat',
-      demo: 'https://yourproject.com',
+        'Developed a web application to manage books, members, and borrowing transactions. Implemented secure user authentication, fine tracking, and efficient book and member management features.',
+      image: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&auto=format&fit=crop',
+      tags: ['PHP', 'MySQL', 'Bootstrap'],
+      github: 'https://github.com/nidula6/Library_System.git',
+      demo: '#',
       featured: false,
     },
     {
-      title: 'Weather Dashboard',
+      title: 'Olly – Online Clothing Shop',
       description:
-        'A beautiful weather dashboard with forecasts, interactive maps, and weather alerts. Features location-based services and historical data visualization.',
-      image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&auto=format&fit=crop',
-      tags: ['React', 'API Integration', 'Chart.js', 'Tailwind'],
-      github: 'https://github.com/yourusername/weather',
-      demo: 'https://yourproject.com',
-      featured: false,
-    },
-    {
-      title: 'Social Media Analytics',
-      description:
-        'Analytics dashboard for social media platforms with real-time metrics, engagement tracking, and comprehensive reporting tools.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop',
-      tags: ['Vue.js', 'Node.js', 'MongoDB', 'D3.js'],
-      github: 'https://github.com/yourusername/analytics',
-      demo: 'https://yourproject.com',
-      featured: false,
-    },
-    {
-      title: 'Fitness Tracker',
-      description:
-        'A comprehensive fitness tracking application with workout plans, progress monitoring, nutrition logging, and goal setting features.',
-      image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&auto=format&fit=crop',
-      tags: ['React Native', 'Express', 'MySQL', 'AWS'],
-      github: 'https://github.com/yourusername/fitness',
-      demo: 'https://yourproject.com',
-      featured: false,
+        'Developing an e-commerce web application for women\'s fashion with secure payments, size filters, and responsive design. Includes an admin dashboard for product, order, and user management, plus real-time sales tracking and inventory alerts.',
+      image: 'https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800&auto=format&fit=crop',
+      tags: ['React.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+      github: 'https://github.com/cycotechnolgies/Online-Clothing-Shop.git',
+      demo: '#',
+      featured: true,
     },
   ];
 
@@ -145,15 +125,7 @@ const Projects = () => {
                       <FaGithub size={20} />
                       <span className="text-sm">Code</span>
                     </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-gray-400 hover:text-green-400 transition-colors duration-200 font-mono text-sm"
-                    >
-                      <FaExternalLinkAlt size={18} />
-                      <span className="text-sm">Live Demo</span>
-                    </a>
+                    
                   </div>
                 </div>
               </motion.div>
@@ -169,7 +141,7 @@ const Projects = () => {
           >
             <p className="text-gray-400 mb-4">Want to see more?</p>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/nidula6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 px-6 py-3 bg-slate-800 text-purple-400 rounded-full font-medium hover:bg-slate-700 transition-all duration-200 border border-slate-700 hover:border-purple-500"

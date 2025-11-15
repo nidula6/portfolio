@@ -1,4 +1,4 @@
-import { FaHeart } from 'react-icons/fa';
+import { FaFireAlt, FaHeart } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <p className="text-gray-400 text-sm flex items-center font-mono">
               <span className="text-green-400 mr-2">{'<'}</span>
-              Made with <FaHeart className="text-red-500 mx-2" /> by{' '}
-              <span className="text-green-400 ml-1 font-medium">Your Name</span>
+             Portfolio  #{' '}
+              <span className="text-green-400 ml-1 font-medium">Nidula_Jayawardhana</span>
               <span className="text-green-400 ml-2">{'/>'}</span>
             </p>
           </div>

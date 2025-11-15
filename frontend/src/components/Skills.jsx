@@ -8,6 +8,7 @@ import {
   FaDocker,
   FaGitAlt,
   FaAws,
+  FaPhp,
 } from 'react-icons/fa';
 import {
   SiJavascript,
@@ -18,6 +19,10 @@ import {
   SiTailwindcss,
   SiNextdotjs,
   SiRedis,
+  SiHtml5,
+  SiCss3,
+  SiC,
+  SiJenkins,
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -28,9 +33,10 @@ const Skills = () => {
     {
       title: 'Frontend',
       skills: [
-        { name: 'React', icon: FaReact, color: 'text-cyan-400' },
-        
+        { name: 'HTML', icon: SiHtml5, color: 'text-orange-500' },
+        { name: 'CSS', icon: SiCss3, color: 'text-blue-500' },
         { name: 'JavaScript', icon: SiJavascript, color: 'text-yellow-400' },
+        { name: 'React', icon: FaReact, color: 'text-cyan-400' },
         { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-cyan-400' },
       ],
     },
@@ -40,15 +46,17 @@ const Skills = () => {
         { name: 'Node.js', icon: FaNodeJs, color: 'text-green-500' },
         { name: 'Express', icon: SiExpress, color: 'text-gray-400' },
         { name: 'Python', icon: FaPython, color: 'text-blue-400' },
+        { name: 'PHP', icon: FaPhp, color: 'text-purple-400' },
+        { name: 'C', icon: SiC, color: 'text-blue-600' },
         { name: 'MongoDB', icon: SiMongodb, color: 'text-green-500' },
         { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-blue-400' },
-        
       ],
     },
     {
       title: 'DevOps & Tools',
       skills: [
         { name: 'Docker', icon: FaDocker, color: 'text-blue-500' },
+        { name: 'Jenkins', icon: SiJenkins, color: 'text-red-500' },
         { name: 'AWS', icon: FaAws, color: 'text-orange-400' },
         { name: 'Git', icon: FaGitAlt, color: 'text-orange-500' },
       ],
