@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa';
 import { HiArrowDown } from 'react-icons/hi';
 import Profile from '../assets/profile.jpg';
+import { generateCVPDF } from '../utils/cvGenerator';
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -42,7 +43,7 @@ const Hero = () => {
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 font-mono">
                 <span className="text-green-400">{'<'}</span>Hi, I'm{' '}
                 <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
-                  Nidula jayawardhana
+                  Nidula
                 </span>
                 <span className="text-green-400">{' />'}</span>
               </h1>
@@ -54,14 +55,14 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <p className="text-2xl md:text-3xl text-green-400 mb-6 font-mono">
-                {'>'} Full Stack Developer_
+                {'>'} Business Analyst | Digital Strategy_
               </p>
               <div className="text-lg text-gray-300 max-w-2xl mx-auto mb-8 font-mono">
                 <p className="mb-2">
-                  <span className="text-cyan-400">const</span> <span className="text-yellow-300">passion</span> = <span className="text-orange-400">"building scalable web apps"</span>;
+                  <span className="text-cyan-400">focus</span> = <span className="text-orange-400">"Strategic thinking & data-driven insights"</span>;
                 </p>
                 <p>
-                  <span className="text-cyan-400">const</span> <span className="text-yellow-300">focus</span> = <span className="text-orange-400">"clean code & innovation"</span>;
+                  <span className="text-cyan-400">expertise</span> = <span className="text-orange-400">"Business Process Modeling & Digital Platforms"</span>;
                 </p>
               </div>
             </motion.div>
@@ -100,19 +101,25 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex justify-center space-x-4"
+              className="flex flex-wrap justify-center gap-4"
             >
               <button
                 onClick={() => scrollToSection('projects')}
                 className="px-8 py-3 bg-gradient-to-r from-green-500 to-cyan-500 text-black font-mono rounded font-medium hover:shadow-lg hover:shadow-green-500/50 transition-all duration-200 transform hover:scale-105"
               >
-                view_projects()
+                view_case_studies()
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="px-8 py-3 border-2 border-green-400 text-green-400 font-mono rounded font-medium hover:bg-green-400 hover:text-black transition-all duration-200 transform hover:scale-105"
               >
-                contact_me()
+                let's_collaborate()
+              </button>
+              <button
+                onClick={generateCVPDF}
+                className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 font-mono rounded font-medium hover:bg-cyan-400 hover:text-black transition-all duration-200 transform hover:scale-105 flex items-center gap-2"
+              >
+                <FaDownload size={16} /> download_cv()
               </button>
             </motion.div>
           </div>

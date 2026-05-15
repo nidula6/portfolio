@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter, FaDownload } from 'react-icons/fa';
 import { HiLocationMarker } from 'react-icons/hi';
 import emailjs from 'emailjs-com';
+import { generateCVPDF } from '../utils/cvGenerator';
 
 const Contact = () => {
   const ref = useRef(null);
@@ -51,10 +52,10 @@ const handleSubmit = (e) => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-4 font-mono">
-            <span className="text-green-400">{'<'}</span>Get In <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Touch</span><span className="text-green-400">{' />'}</span>
+            <span className="text-green-400">{'<'}</span>Let's <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Connect</span><span className="text-green-400">{' />'}</span>
           </h2>
           <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto font-mono text-sm">
-            // Let's collaborate on something amazing
+            // Open to discussing business analysis, digital strategy & collaboration opportunities
           </p>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -66,7 +67,7 @@ const handleSubmit = (e) => {
             >
               <h3 className="text-2xl font-semibold text-white mb-6 font-mono">Contact Information</h3>
               <p className="text-gray-400 mb-8 font-mono text-sm">
-                // Always open to new opportunities and collaborations
+                // Always interested in discussing business opportunities and strategic initiatives
               </p>
 
               <div className="space-y-6">
@@ -115,9 +116,16 @@ const handleSubmit = (e) => {
                   >
                     <FaLinkedin size={24} />
                   </a>
-                  
-                    
                 </div>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-slate-700">
+                <button
+                  onClick={generateCVPDF}
+                  className="w-full px-8 py-3 bg-gradient-to-r from-cyan-500 to-green-500 text-black rounded-lg font-medium hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-200 transform hover:scale-105 font-mono flex items-center justify-center gap-2"
+                >
+                  <FaDownload size={18} /> Download My CV
+                </button>
               </div>
             </motion.div>
 

@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <span className="text-2xl font-bold font-mono text-green-400">
-              {'<'}Dev{' />'} 
+              {'<'}BA {' />'} 
             </span>
           </div>
 
