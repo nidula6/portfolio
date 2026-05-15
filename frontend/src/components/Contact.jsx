@@ -51,11 +51,11 @@ const handleSubmit = (e) => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-4 font-mono">
-            <span className="text-green-400">{'<'}</span>Let's <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Connect</span><span className="text-green-400">{' />'}</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-3">
+            Let's Connect
           </h2>
-          <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto font-mono text-sm">
-            // Open to discussing business analysis, digital strategy & collaboration opportunities
+          <p className="text-center text-indigo-300 mb-12 max-w-2xl mx-auto">
+            Open to discussing business opportunities, digital strategy initiatives, and collaboration. I'm always interested in exploring how I can help optimize processes and drive business value.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -65,21 +65,21 @@ const handleSubmit = (e) => {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h3 className="text-2xl font-semibold text-white mb-6 font-mono">Contact Information</h3>
-              <p className="text-gray-400 mb-8 font-mono text-sm">
-                // Always interested in discussing business opportunities and strategic initiatives
+              <h3 className="text-2xl font-semibold text-white mb-6">Get In Touch</h3>
+              <p className="text-gray-400 mb-8 text-sm">
+                Whether you have a specific project in mind or just want to explore opportunities, I'd love to hear from you.
               </p>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center">
-                    <FaEnvelope className="text-green-400 text-xl" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center border border-indigo-500/30">
+                    <FaEnvelope className="text-indigo-400 text-xl" />
                   </div>
                   <div>
-                    <h4 className="text-white font-medium mb-1 font-mono">Email</h4>
+                    <h4 className="text-white font-medium mb-1">Email</h4>
                     <a
-                      href="mailto:your.email@example.com"
-                      className="text-gray-400 hover:text-green-400 transition-colors duration-200 font-mono text-sm"
+                      href="mailto:nidulajayawardana@gmail.com"
+                      className="text-gray-400 hover:text-indigo-400 transition-colors duration-200 text-sm"
                     >
                       nidulajayawardana@gmail.com
                     </a>
@@ -87,24 +87,24 @@ const handleSubmit = (e) => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center">
-                    <HiLocationMarker className="text-green-400 text-xl" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center border border-indigo-500/30">
+                    <HiLocationMarker className="text-indigo-400 text-xl" />
                   </div>
                   <div>
-                    <h4 className="text-white font-medium mb-1 font-mono">Location</h4>
-                    <p className="text-gray-400 font-mono text-sm">Gampaha, Sri lanka</p>
+                    <h4 className="text-white font-medium mb-1">Location</h4>
+                    <p className="text-gray-400 text-sm">Gampaha, Sri Lanka</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h4 className="text-white font-medium mb-4 font-mono">Connect with me</h4>
+                <h4 className="text-white font-medium mb-4">Connect on Social</h4>
                 <div className="flex space-x-4">
                   <a
                     href="https://github.com/nidula6"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-green-400 hover:bg-slate-700 transition-all duration-200"
+                    className="w-12 h-12 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:border-indigo-400 transition-all duration-200"
                   >
                     <FaGithub size={24} />
                   </a>
@@ -112,7 +112,7 @@ const handleSubmit = (e) => {
                     href="https://linkedin.com/in/nidula-jayawardhana-4861a824b"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-green-400 hover:bg-slate-700 transition-all duration-200"
+                    className="w-12 h-12 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:border-indigo-400 transition-all duration-200"
                   >
                     <FaLinkedin size={24} />
                   </a>
@@ -122,9 +122,9 @@ const handleSubmit = (e) => {
               <div className="mt-8 pt-8 border-t border-slate-700">
                 <button
                   onClick={generateCVPDF}
-                  className="w-full px-8 py-3 bg-gradient-to-r from-cyan-500 to-green-500 text-black rounded-lg font-medium hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-200 transform hover:scale-105 font-mono flex items-center justify-center gap-2"
+                  className="w-full px-8 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-indigo-500/50 transition-all duration-200 transform hover:scale-105 flex items-center justify-center gap-2"
                 >
-                  <FaDownload size={18} /> Download My CV
+                  <FaDownload size={18} /> Download Resume
                 </button>
               </div>
             </motion.div>
@@ -137,7 +137,7 @@ const handleSubmit = (e) => {
             >
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-white font-medium mb-2 font-mono text-sm">
+                  <label htmlFor="name" className="block text-white font-medium mb-2 text-sm">
                     Name
                   </label>
                   <input
@@ -147,13 +147,13 @@ const handleSubmit = (e) => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-green-500 transition-colors duration-200 font-mono"
+                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-indigo-500 transition-colors duration-200"
                     placeholder="Your Name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-white font-medium mb-2 font-mono text-sm">
+                  <label htmlFor="email" className="block text-white font-medium mb-2 text-sm">
                     Email
                   </label>
                   <input
@@ -163,13 +163,13 @@ const handleSubmit = (e) => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-green-500 transition-colors duration-200 font-mono"
+                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-indigo-500 transition-colors duration-200"
                     placeholder="your.email@example.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-white font-medium mb-2 font-mono text-sm">
+                  <label htmlFor="message" className="block text-white font-medium mb-2 text-sm">
                     Message
                   </label>
                   <textarea
@@ -179,16 +179,16 @@ const handleSubmit = (e) => {
                     onChange={handleChange}
                     required
                     rows="5"
-                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-green-500 transition-colors duration-200 resize-none font-mono"
-                    placeholder="Your message..."
+                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-indigo-500 transition-colors duration-200 resize-none"
+                    placeholder="Tell me about your project or inquiry..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-3 bg-gradient-to-r from-green-500 to-cyan-500 text-black rounded-lg font-medium hover:shadow-lg hover:shadow-green-500/50 transition-all duration-200 transform hover:scale-105 font-mono"
+                  className="w-full px-8 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-indigo-500/50 transition-all duration-200 transform hover:scale-105"
                 >
-                  send_message()
+                  Send Message
                 </button>
               </form>
             </motion.div>

@@ -17,8 +17,8 @@ const Hero = () => {
       {/* Animated Background Elements - Grid Pattern */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-        <div className="absolute w-96 h-96 bg-green-500/10 rounded-full blur-3xl top-20 -left-48 animate-pulse"></div>
-        <div className="absolute w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl bottom-20 -right-48 animate-pulse delay-700"></div>
+        <div className="absolute w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl top-20 -left-48 animate-pulse"></div>
+        <div className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl bottom-20 -right-48 animate-pulse delay-700"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
@@ -28,7 +28,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden ring-2 ring-green-400/30 shadow-xl bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800"
+            className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden ring-2 ring-indigo-400/40 shadow-2xl shadow-indigo-500/30 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800"
           >
             <img src={Profile} alt="Profile avatar" className="w-full h-full object-cover" />
           </motion.div>
@@ -40,12 +40,11 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 font-mono">
-                <span className="text-green-400">{'<'}</span>Hi, I'm{' '}
-                <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
+                Hi, I'm{' '}
+                <span className="bg-gradient-to-r from-indigo-400 to-blue-400 bg-clip-text text-transparent">
                   Nidula
                 </span>
-                <span className="text-green-400">{' />'}</span>
               </h1>
             </motion.div>
 
@@ -54,16 +53,17 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <p className="text-2xl md:text-3xl text-green-400 mb-6 font-mono">
-                {'>'} Business Analyst | Digital Strategy_
+              <p className="text-2xl md:text-3xl text-indigo-400 mb-3 font-semibold tracking-wide">
+                Business Analyst | Strategic Digital Platform Designer
               </p>
-              <div className="text-lg text-gray-300 max-w-2xl mx-auto mb-8 font-mono">
-                <p className="mb-2">
-                  <span className="text-cyan-400">focus</span> = <span className="text-orange-400">"Strategic thinking & data-driven insights"</span>;
-                </p>
-                <p>
-                  <span className="text-cyan-400">expertise</span> = <span className="text-orange-400">"Business Process Modeling & Digital Platforms"</span>;
-                </p>
+              <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
+                Transforming complex business challenges into scalable digital solutions. Specializing in enterprise process optimization, market-driven product strategy, and data-informed decision making.
+              </p>
+              <div className="flex justify-center gap-3 mb-8 flex-wrap">
+                <span className="px-3 py-1 bg-indigo-500/20 border border-indigo-500/50 rounded-full text-sm text-indigo-300">Process Optimization</span>
+                <span className="px-3 py-1 bg-indigo-500/20 border border-indigo-500/50 rounded-full text-sm text-indigo-300">Data Analytics</span>
+                <span className="px-3 py-1 bg-indigo-500/20 border border-indigo-500/50 rounded-full text-sm text-indigo-300">Product Strategy</span>
+                <span className="px-3 py-1 bg-indigo-500/20 border border-indigo-500/50 rounded-full text-sm text-indigo-300">Business Intelligence</span>
               </div>
             </motion.div>
 
@@ -105,21 +105,21 @@ const Hero = () => {
             >
               <button
                 onClick={() => scrollToSection('projects')}
-                className="px-8 py-3 bg-gradient-to-r from-green-500 to-cyan-500 text-black font-mono rounded font-medium hover:shadow-lg hover:shadow-green-500/50 transition-all duration-200 transform hover:scale-105"
+                className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-indigo-500/50 transition-all duration-200 transform hover:scale-105"
               >
-                view_case_studies()
+                View Case Studies
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="px-8 py-3 border-2 border-green-400 text-green-400 font-mono rounded font-medium hover:bg-green-400 hover:text-black transition-all duration-200 transform hover:scale-105"
+                className="px-8 py-3 border-2 border-indigo-400 text-indigo-300 font-semibold rounded-lg hover:bg-indigo-400 hover:text-white transition-all duration-200 transform hover:scale-105"
               >
-                let's_collaborate()
+                Start a Conversation
               </button>
               <button
                 onClick={generateCVPDF}
-                className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 font-mono rounded font-medium hover:bg-cyan-400 hover:text-black transition-all duration-200 transform hover:scale-105 flex items-center gap-2"
+                className="px-8 py-3 border-2 border-teal-400 text-teal-300 font-semibold rounded-lg hover:bg-teal-400 hover:text-white transition-all duration-200 transform hover:scale-105 flex items-center gap-2"
               >
-                <FaDownload size={16} /> download_cv()
+                <FaDownload size={16} /> Download Resume
               </button>
             </motion.div>
           </div>

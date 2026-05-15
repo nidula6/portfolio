@@ -39,8 +39,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold font-mono text-green-400">
-              {'<'}BA {' />'} 
+            <span className="text-2xl font-bold text-indigo-400">
+              N<span className="text-blue-400">J</span> | Business Analyst
             </span>
           </div>
 
@@ -50,7 +50,7 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-300 hover:text-green-400 transition-colors duration-200 font-medium font-mono"
+                className="text-gray-300 hover:text-indigo-400 transition-colors duration-200 font-medium text-sm"
               >
                 {item.name}
               </button>
@@ -61,7 +61,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-green-400 focus:outline-none"
+              className="text-gray-300 hover:text-indigo-400 focus:outline-none"
             >
               {isOpen ? <HiX size={28} /> : <HiMenu size={28} />}
             </button>
@@ -77,7 +77,7 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-green-400 hover:bg-slate-800 rounded-md transition-colors duration-200 font-mono"
+                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-indigo-400 hover:bg-slate-800 rounded-md transition-colors duration-200"
               >
                 {item.name}
               </button>
