@@ -38,12 +38,9 @@ const Skills = () => {
   ];
 
   const baTools = [
-    { name: 'Excel & VBA', icon: FaMicrosoft, color: 'text-green-500', desc: 'Advanced analytics' },
     { name: 'SQL', icon: FaDatabase, color: 'text-blue-500', desc: 'Data querying' },
-    { name: 'Tableau', icon: SiTableau, color: 'text-orange-500', desc: 'Data visualization' },
     { name: 'Python', icon: SiPython, color: 'text-yellow-600', desc: 'Data analysis' },
     { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-indigo-600', desc: 'Databases' },
-    { name: 'Power BI', icon: FaChartBar, color: 'text-yellow-500', desc: 'Business intelligence' },
   ];
 
   const methodologies = [
